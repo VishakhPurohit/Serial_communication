@@ -1,0 +1,3 @@
+".\Objects\TRANSMITTER.obj" 
+TO ".\Objects\TRANSMITTER" 
+PRINT(".\Listings\TRANSMITTER.m51")

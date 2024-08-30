@@ -1,0 +1,66 @@
+A51 MACRO ASSEMBLER  TRANSMITTER                                                          04/24/2024 21:32:58 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\TRANSMITTER.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE TRANSMITTER.a51 SET(SMALL) DEBUG PRINT(.\Listings\TRANSMITTER.lst) OBJE
+                      CT(.\Objects\TRANSMITTER.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 758920            1             mov TMOD,#20h
+
+0003 758DFD            2             mov TH1,#-3
+
+0006 759850            3             mov SCON,#50h
+
+0009 D28E              4             setb TR1
+
+000B 75994A            5             AGAIN:MOV SBUF,#"J"
+
+000E 3099FD            6             HERE:JNB TI,HERE
+
+0011 C299              7             CLR TI
+
+0013 790A              8             mov r1, #10
+
+0015 7AC8              9             xx:mov r2, #200
+
+0017 7BC8             10             yy:mov r3, #200
+
+0019 DBFE             11             ss: djnz r3, ss
+
+001B DAFA             12             djnz r2, yy
+
+001D D9F6             13             djnz r1, xx
+
+                      14             
+
+001F 80EA             15             SJMP AGAIN      
+
+*** WARNING #A41 IN 15 (TRANSMITTER.a51, LINE 15): MISSING 'END' STATEMENT
+A51 MACRO ASSEMBLER  TRANSMITTER                                                          04/24/2024 21:32:58 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   000BH   A   
+HERE . . . . . . .  C ADDR   000EH   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SS . . . . . . . .  C ADDR   0019H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+XX . . . . . . . .  C ADDR   0015H   A   
+YY . . . . . . . .  C ADDR   0017H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)

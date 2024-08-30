@@ -1,0 +1,72 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/24/2024  21:33:48  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\RECEIVER.obj TO .\Objects\RECEIVER PRINT (.\Listings\RECEIVER.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\RECEIVER.obj (RECEIVER)
+
+
+LINK MAP OF MODULE:  .\Objects\RECEIVER (RECEIVER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0027H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\RECEIVER (RECEIVER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        RECEIVER
+  C:0022H         SYMBOL        AA
+  C:0025H         SYMBOL        EN
+  C:000DH         SYMBOL        HERE
+  D:0090H         SYMBOL        P1
+  B:0098H.0       SYMBOL        RI
+  D:0099H         SYMBOL        SBUF
+  D:0098H         SYMBOL        SCON
+  C:0017H         SYMBOL        SEV
+  D:008DH         SYMBOL        TH1
+  D:0089H         SYMBOL        TMOD
+  B:0088H.6       SYMBOL        TR1
+  C:0000H         LINE#         2
+  C:0003H         LINE#         4
+  C:0006H         LINE#         5
+  C:0009H         LINE#         6
+  C:000BH         LINE#         7
+  C:000DH         LINE#         8
+  C:0010H         LINE#         9
+  C:0012H         LINE#         10
+  C:0013H         LINE#         12
+  C:0015H         LINE#         13
+  C:0017H         LINE#         16
+  C:0018H         LINE#         17
+  C:0019H         LINE#         18
+  C:001BH         LINE#         19
+  C:001DH         LINE#         20
+  C:0020H         LINE#         21
+  C:0022H         LINE#         23
+  C:0025H         LINE#         24
+  C:0026H         LINE#         25
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/24/2024  21:33:48  PAGE 2
+
+
+  -------         ENDMOD        RECEIVER
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0027H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=39
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
